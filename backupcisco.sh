@@ -2,7 +2,7 @@
 
 set username "Username"
 set password "Password"
-set devices [open "/home/ip-backup-router.txt"]
+set devices [open "/home/ipdevices.txt"]
 set date [clock format [clock seconds] -format {%d%m%Y-%T}]
 
 while {[gets $devices device] !=-1} {
